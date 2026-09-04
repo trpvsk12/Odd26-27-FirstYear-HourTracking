@@ -1,0 +1,164 @@
+[
+  {
+    "class": "MECH A",
+    "classCoordinator": "Dr. S. Visweswaran",
+    "classCoordinatorMobile": "9384226598",
+    "coClassIncharge": "Dr. V. Senthilkumar",
+    "coClassInchargeMobile": "9488726768.0",
+    "departmentCoordinator": "Dr. V. Senthilkumar",
+    "departmentCoordinatorMobile": "9488726768.0"
+  },
+  {
+    "class": "MECH B",
+    "classCoordinator": "Dr. R. Pradeeban",
+    "classCoordinatorMobile": "7904070295",
+    "coClassIncharge": "Dr. P. Shyamala Anto Mary",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "",
+    "departmentCoordinatorMobile": ""
+  },
+  {
+    "class": "EEE",
+    "classCoordinator": "Dr. Bansura Banu",
+    "classCoordinatorMobile": "70103 25792",
+    "coClassIncharge": "Dr. A. Narayanan",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "Dr. Jingley Jeba",
+    "departmentCoordinatorMobile": "9442389908.0"
+  },
+  {
+    "class": "CSE A",
+    "classCoordinator": "Dr. D. Saranya",
+    "classCoordinatorMobile": "9791567317",
+    "coClassIncharge": "Dr. R. Pichailakshmi",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "Dr.A. Muthuraj/ CSE",
+    "departmentCoordinatorMobile": "9486715098.0"
+  },
+  {
+    "class": "CSE B",
+    "classCoordinator": "Mr. M. Vimal Raj Jayaharan",
+    "classCoordinatorMobile": "8220868852",
+    "coClassIncharge": "Dr. S. Blesswin",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "",
+    "departmentCoordinatorMobile": ""
+  },
+  {
+    "class": "CSE C",
+    "classCoordinator": "Dr.S.Manicka Vinayagam",
+    "classCoordinatorMobile": "7904681908",
+    "coClassIncharge": "Mr. S. Dharmarajan",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "",
+    "departmentCoordinatorMobile": ""
+  },
+  {
+    "class": "CSE D",
+    "classCoordinator": "Dr. N. Jakeer",
+    "classCoordinatorMobile": "9786882343",
+    "coClassIncharge": "Dr. J. Sebastian Lawarance",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "",
+    "departmentCoordinatorMobile": ""
+  },
+  {
+    "class": "CSE E",
+    "classCoordinator": "Dr. P. Selvaganapathi",
+    "classCoordinatorMobile": "8667004104",
+    "coClassIncharge": "Ms. N. Selvi",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "",
+    "departmentCoordinatorMobile": ""
+  },
+  {
+    "class": "AIML",
+    "classCoordinator": "Ms. S. Varshini",
+    "classCoordinatorMobile": "8667041728",
+    "coClassIncharge": "Dr. K. Iyappan",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "Dr.K.Gurunathan/AI&DS",
+    "departmentCoordinatorMobile": "9994817275.0"
+  },
+  {
+    "class": "ECE A",
+    "classCoordinator": "Mr. M. Sundareshwaran",
+    "classCoordinatorMobile": "7373574531",
+    "coClassIncharge": "Dr. D. Kumar",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "Dr.E.Raja / ECE",
+    "departmentCoordinatorMobile": "9003456148.0"
+  },
+  {
+    "class": "ECE B",
+    "classCoordinator": "Dr. S. Sridevi",
+    "classCoordinatorMobile": "9629647557",
+    "coClassIncharge": "Mr. G. Purushothaman",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "",
+    "departmentCoordinatorMobile": ""
+  },
+  {
+    "class": "ECE C",
+    "classCoordinator": "Dr. S. Martin Raja",
+    "classCoordinatorMobile": "9787809024",
+    "coClassIncharge": "Dr. C. Kanaga Dhurga",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "",
+    "departmentCoordinatorMobile": ""
+  },
+  {
+    "class": "IT A",
+    "classCoordinator": "Mrs.S.Devigayathri",
+    "classCoordinatorMobile": "7598016075",
+    "coClassIncharge": "Dr. P. Muthukrishnan",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "Dr. S. Sabeetha Saraswathi",
+    "departmentCoordinatorMobile": "9842415482.0"
+  },
+  {
+    "class": "IT B",
+    "classCoordinator": "Dr.N.Rajeswari",
+    "classCoordinatorMobile": "9003972105",
+    "coClassIncharge": "Dr. T. Raja",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "",
+    "departmentCoordinatorMobile": ""
+  },
+  {
+    "class": "CIVIL",
+    "classCoordinator": "Dr.M.Bhuvaneshwari",
+    "classCoordinatorMobile": "9751513152",
+    "coClassIncharge": "Dr. R. Jino",
+    "coClassInchargeMobile": "9790037598.0",
+    "departmentCoordinator": "Dr. R. Jino",
+    "departmentCoordinatorMobile": "9790037598.0"
+  },
+  {
+    "class": "AI&DS A",
+    "classCoordinator": "Mr. P. Ravi Kumar",
+    "classCoordinatorMobile": "6369722362",
+    "coClassIncharge": "Dr. R. Ramesh",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "Dr.S.Suresh Kumar",
+    "departmentCoordinatorMobile": "8300809150.0"
+  },
+  {
+    "class": "AI&DS B",
+    "classCoordinator": "Dr. A. Rajina Banu",
+    "classCoordinatorMobile": "9176953535",
+    "coClassIncharge": "Dr. P. Anitha",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "",
+    "departmentCoordinatorMobile": ""
+  },
+  {
+    "class": "AI&DS C",
+    "classCoordinator": "Dr. S. R. Karpagam",
+    "classCoordinatorMobile": "7538879314",
+    "coClassIncharge": "Dr. S. Mohan Kumar",
+    "coClassInchargeMobile": "",
+    "departmentCoordinator": "",
+    "departmentCoordinatorMobile": ""
+  }
+]
