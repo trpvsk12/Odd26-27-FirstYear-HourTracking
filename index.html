@@ -19,6 +19,32 @@ label{font-size:11px;color:var(--muted);font-weight:700;display:block;margin-bot
 <style>
 .credit-card{margin:22px auto 8px;max-width:720px;padding:16px 18px;text-align:center;border:1px solid #dbe3ef;border-radius:16px;background:#f8fafc}.credit-title{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;opacity:.65}.credit-name{font-size:19px;font-weight:800;margin-top:5px}.credit-role{font-size:14px;margin-top:2px;opacity:.72}.designed-by{text-align:center;font-size:12px;opacity:.62;margin:7px 0 22px}</style>
 </head><body>
+
+<style>
+#topCoordinator{
+  text-align:center;
+  margin:0 auto 20px;
+  padding:14px 12px;
+  border-bottom:1px solid rgba(0,0,0,.10);
+}
+#topCoordinator .coord-title{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.65}
+#topCoordinator .coord-name{font-size:20px;font-weight:800;margin-top:5px}
+#topCoordinator .coord-role{font-size:14px;opacity:.72;margin-top:2px}
+#bottomDesigner{
+  text-align:right;
+  font-size:12px;
+  opacity:.65;
+  margin:28px 4px 8px;
+  padding-top:10px;
+  border-top:1px solid rgba(0,0,0,.08);
+}
+</style>
+<div id="topCoordinator">
+  <div class="coord-title">First Year Coordinator</div>
+  <div class="coord-name">Dr. V. Senthilkumar</div>
+  <div class="coord-role">Professor</div>
+</div>
+
 <header><h1>First Year Faculty Tracker</h1><p>Academic Year 2026–2027 • Complete timetable for all 18 classes</p></header>
 <main><div class="tabs"><button class="tab active" data-tab="schedule">Hour Tracker</button><button class="tab" data-tab="directory">Faculty List</button></div>
 <section id="schedule" class="panel active"><div class="controls"><div><label>DAY</label><select id="day"><option>Mon</option><option>Tue</option><option>Wed</option><option>Thu</option><option>Fri</option></select></div><div><label>HOUR</label><select id="hour"><option value="1">1st Hour</option><option value="2">2nd Hour</option><option value="3">3rd Hour</option><option value="4">4th Hour</option><option value="5">5th Hour</option><option value="6">6th Hour</option><option value="7">7th Hour</option></select></div><div><label>CLASS</label><select id="classFilter"><option value="ALL">All 18 Classes</option></select></div></div><div class="summary" id="summary"></div><div class="grid" id="results"></div></section>
@@ -41,18 +67,7 @@ renderSchedule();renderDirectory();if('serviceWorker'in navigator)navigator.serv
   <div class="credit-role">Professor</div>
 </div>
 
-<section id="classInchargesSection" style="margin-top:28px;">
-  <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
-    <div>
-      <h2 style="margin:0;">Class In-Charges</h2>
-      <p style="margin:5px 0 14px;opacity:.7;">Class Coordinators and Co-Class In-Charges with contact numbers</p>
-    </div>
-    <input id="classInchargeSearch" type="search" placeholder="Search class / faculty / mobile"
-      style="padding:11px 13px;border:1px solid #d5d9e0;border-radius:10px;min-width:240px;max-width:100%;font:inherit;">
-  </div>
-  <div id="classInchargeList"></div>
-</section>
-<script id="classInchargesData" type="application/json">[{"class": "MECH A", "classCoordinator": "Dr. S. Visweswaran", "classCoordinatorMobile": "9384226598", "coClassIncharge": "Dr. V. Senthilkumar", "coClassInchargeMobile": "9488726768.0", "departmentCoordinator": "Dr. V. Senthilkumar", "departmentCoordinatorMobile": "9488726768.0"}, {"class": "MECH B", "classCoordinator": "Dr. R. Pradeeban", "classCoordinatorMobile": "7904070295", "coClassIncharge": "Dr. P. Shyamala Anto Mary", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "EEE", "classCoordinator": "Dr. Bansura Banu", "classCoordinatorMobile": "70103 25792", "coClassIncharge": "Dr. A. Narayanan", "coClassInchargeMobile": "", "departmentCoordinator": "Dr. Jingley Jeba", "departmentCoordinatorMobile": "9442389908.0"}, {"class": "CSE A", "classCoordinator": "Dr. D. Saranya", "classCoordinatorMobile": "9791567317", "coClassIncharge": "Dr. R. Pichailakshmi", "coClassInchargeMobile": "", "departmentCoordinator": "Dr.A. Muthuraj/ CSE", "departmentCoordinatorMobile": "9486715098.0"}, {"class": "CSE B", "classCoordinator": "Mr. M. Vimal Raj Jayaharan", "classCoordinatorMobile": "8220868852", "coClassIncharge": "Dr. S. Blesswin", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "CSE C", "classCoordinator": "Dr.S.Manicka Vinayagam", "classCoordinatorMobile": "7904681908", "coClassIncharge": "Mr. S. Dharmarajan", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "CSE D", "classCoordinator": "Dr. N. Jakeer", "classCoordinatorMobile": "9786882343", "coClassIncharge": "Dr. J. Sebastian Lawarance", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "CSE E", "classCoordinator": "Dr. P. Selvaganapathi", "classCoordinatorMobile": "8667004104", "coClassIncharge": "Ms. N. Selvi", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "AIML", "classCoordinator": "Ms. S. Varshini", "classCoordinatorMobile": "8667041728", "coClassIncharge": "Dr. K. Iyappan", "coClassInchargeMobile": "", "departmentCoordinator": "Dr.K.Gurunathan/AI&DS", "departmentCoordinatorMobile": "9994817275.0"}, {"class": "ECE A", "classCoordinator": "Mr. M. Sundareshwaran", "classCoordinatorMobile": "7373574531", "coClassIncharge": "Dr. D. Kumar", "coClassInchargeMobile": "", "departmentCoordinator": "Dr.E.Raja / ECE", "departmentCoordinatorMobile": "9003456148.0"}, {"class": "ECE B", "classCoordinator": "Dr. S. Sridevi", "classCoordinatorMobile": "9629647557", "coClassIncharge": "Mr. G. Purushothaman", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "ECE C", "classCoordinator": "Dr. S. Martin Raja", "classCoordinatorMobile": "9787809024", "coClassIncharge": "Dr. C. Kanaga Dhurga", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "IT A", "classCoordinator": "Mrs.S.Devigayathri", "classCoordinatorMobile": "7598016075", "coClassIncharge": "Dr. P. Muthukrishnan", "coClassInchargeMobile": "", "departmentCoordinator": "Dr. S. Sabeetha Saraswathi", "departmentCoordinatorMobile": "9842415482.0"}, {"class": "IT B", "classCoordinator": "Dr.N.Rajeswari", "classCoordinatorMobile": "9003972105", "coClassIncharge": "Dr. T. Raja", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "CIVIL", "classCoordinator": "Dr.M.Bhuvaneshwari", "classCoordinatorMobile": "9751513152", "coClassIncharge": "Dr. R. Jino", "coClassInchargeMobile": "9790037598.0", "departmentCoordinator": "Dr. R. Jino", "departmentCoordinatorMobile": "9790037598.0"}, {"class": "AI&DS A", "classCoordinator": "Mr. P. Ravi Kumar", "classCoordinatorMobile": "6369722362", "coClassIncharge": "Dr. R. Ramesh", "coClassInchargeMobile": "", "departmentCoordinator": "Dr.S.Suresh Kumar", "departmentCoordinatorMobile": "8300809150.0"}, {"class": "AI&DS B", "classCoordinator": "Dr. A. Rajina Banu", "classCoordinatorMobile": "9176953535", "coClassIncharge": "Dr. P. Anitha", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "AI&DS C", "classCoordinator": "Dr. S. R. Karpagam", "classCoordinatorMobile": "7538879314", "coClassIncharge": "Dr. S. Mohan Kumar", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}]</script>
+
 <script>
 (function() {
   const rows = JSON.parse(document.getElementById('classInchargesData').textContent);
@@ -86,5 +101,68 @@ renderSchedule();renderDirectory();if('serviceWorker'in navigator)navigator.serv
 })();
 </script>
 
+
+<style>
+.class-contact-card{margin-top:18px;padding:15px;border:1px solid rgba(0,0,0,.10);border-radius:15px;background:#fff}
+.class-contact-title{font-weight:800;font-size:16px;margin-bottom:10px}
+.class-contact-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:8px 0;border-top:1px solid rgba(0,0,0,.07)}
+.class-contact-label{font-size:12px;opacity:.65;font-weight:700}
+.class-contact-name{font-weight:700;margin-top:2px}
+.class-contact-phone a{text-decoration:none}
+</style>
+<div id="selectedClassIncharge" class="class-contact-card">
+  <div class="class-contact-title">Class In-Charge Details</div>
+  <div id="selectedClassInchargeBody" style="opacity:.7;">Select a class to view the Class In-Charge.</div>
+</div>
+<script id="classInchargesData" type="application/json">[{"class": "MECH A", "classCoordinator": "Dr. S. Visweswaran", "classCoordinatorMobile": "9384226598", "coClassIncharge": "Dr. V. Senthilkumar", "coClassInchargeMobile": "9488726768", "departmentCoordinator": "Dr. V. Senthilkumar", "departmentCoordinatorMobile": "9488726768"}, {"class": "MECH B", "classCoordinator": "Dr. R. Pradeeban", "classCoordinatorMobile": "7904070295", "coClassIncharge": "Dr. P. Shyamala Anto Mary", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "EEE", "classCoordinator": "Dr. Bansura Banu", "classCoordinatorMobile": "70103 25792", "coClassIncharge": "Dr. A. Narayanan", "coClassInchargeMobile": "", "departmentCoordinator": "Dr. Jingley Jeba", "departmentCoordinatorMobile": "9442389908"}, {"class": "CSE A", "classCoordinator": "Dr. D. Saranya", "classCoordinatorMobile": "9791567317", "coClassIncharge": "Dr. R. Pichailakshmi", "coClassInchargeMobile": "", "departmentCoordinator": "Dr.A. Muthuraj/ CSE", "departmentCoordinatorMobile": "9486715098"}, {"class": "CSE B", "classCoordinator": "Mr. M. Vimal Raj Jayaharan", "classCoordinatorMobile": "8220868852", "coClassIncharge": "Dr. S. Blesswin", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "CSE C", "classCoordinator": "Dr.S.Manicka Vinayagam", "classCoordinatorMobile": "7904681908", "coClassIncharge": "Mr. S. Dharmarajan", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "CSE D", "classCoordinator": "Dr. N. Jakeer", "classCoordinatorMobile": "9786882343", "coClassIncharge": "Dr. J. Sebastian Lawarance", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "CSE E", "classCoordinator": "Dr. P. Selvaganapathi", "classCoordinatorMobile": "8667004104", "coClassIncharge": "Ms. N. Selvi", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "AIML", "classCoordinator": "Ms. S. Varshini", "classCoordinatorMobile": "8667041728", "coClassIncharge": "Dr. K. Iyappan", "coClassInchargeMobile": "", "departmentCoordinator": "Dr.K.Gurunathan/AI&DS", "departmentCoordinatorMobile": "9994817275"}, {"class": "ECE A", "classCoordinator": "Mr. M. Sundareshwaran", "classCoordinatorMobile": "7373574531", "coClassIncharge": "Dr. D. Kumar", "coClassInchargeMobile": "", "departmentCoordinator": "Dr.E.Raja / ECE", "departmentCoordinatorMobile": "9003456148"}, {"class": "ECE B", "classCoordinator": "Dr. S. Sridevi", "classCoordinatorMobile": "9629647557", "coClassIncharge": "Mr. G. Purushothaman", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "ECE C", "classCoordinator": "Dr. S. Martin Raja", "classCoordinatorMobile": "9787809024", "coClassIncharge": "Dr. C. Kanaga Dhurga", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "IT A", "classCoordinator": "Mrs.S.Devigayathri", "classCoordinatorMobile": "7598016075", "coClassIncharge": "Dr. P. Muthukrishnan", "coClassInchargeMobile": "", "departmentCoordinator": "Dr. S. Sabeetha Saraswathi", "departmentCoordinatorMobile": "9842415482"}, {"class": "IT B", "classCoordinator": "Dr.N.Rajeswari", "classCoordinatorMobile": "9003972105", "coClassIncharge": "Dr. T. Raja", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "Civil", "classCoordinator": "Dr.M.Bhuvaneshwari", "classCoordinatorMobile": "9751513152", "coClassIncharge": "Dr. R. Jino", "coClassInchargeMobile": "9790037598", "departmentCoordinator": "Dr. R. Jino", "departmentCoordinatorMobile": "9790037598"}, {"class": "AI&DS A", "classCoordinator": "Mr. P. Ravi Kumar", "classCoordinatorMobile": "6369722362", "coClassIncharge": "Dr. R. Ramesh", "coClassInchargeMobile": "", "departmentCoordinator": "Dr.S.Suresh Kumar", "departmentCoordinatorMobile": "8300809150"}, {"class": "AI&DS B", "classCoordinator": "Dr. A. Rajina Banu", "classCoordinatorMobile": "9176953535", "coClassIncharge": "Dr. P. Anitha", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}, {"class": "AI&DS C", "classCoordinator": "Dr. S. R. Karpagam", "classCoordinatorMobile": "7538879314", "coClassIncharge": "Dr. S. Mohan Kumar", "coClassInchargeMobile": "", "departmentCoordinator": "", "departmentCoordinatorMobile": ""}]</script>
+<script>
+(function(){
+  const rows = JSON.parse(document.getElementById('classInchargesData').textContent);
+  const body = document.getElementById('selectedClassInchargeBody');
+
+  function clean(s){ return String(s || '').trim().toUpperCase().replace(/\s+/g,' '); }
+  function phone(v){
+    if(!v) return '';
+    const p = String(v).replace(/\s+/g,'');
+    return `<div class="class-contact-phone"><a href="tel:${p}">📞 ${String(v)}</a></div>`;
+  }
+  function findClass(){
+    const selects = [...document.querySelectorAll('select')];
+    const clsSelect = selects.find(s => /class|section/i.test(s.id+' '+s.name+' '+(s.getAttribute('aria-label')||'')));
+    if(clsSelect) return clsSelect.value;
+    // fallback: find selected option whose text looks like a class/section
+    for(const s of selects){
+      const t = s.options[s.selectedIndex]?.text || '';
+      if(/^(I\s+)?(EEE|ECE|CSE|AI&DS|AIML|IT|MECH|CIVIL)/i.test(t)) return t;
+    }
+    return '';
+  }
+  function render(){
+    const selected = clean(findClass());
+    if(!selected) {
+      body.innerHTML = '<div style="opacity:.7;">Select a class to view the Class In-Charge.</div>';
+      return;
+    }
+    const r = rows.find(x => clean(x.class) === selected || clean(x.class).replace(/-/g,' ') === selected.replace(/-/g,' '));
+    if(!r){
+      body.innerHTML = `<div><b>${selected}</b><div style="opacity:.7;margin-top:5px;">Class In-Charge details not found.</div></div>`;
+      return;
+    }
+    let h = `<div style="font-weight:800;margin-bottom:4px;">${r.class}</div>`;
+    h += `<div class="class-contact-row"><div><div class="class-contact-label">Class In-Charge</div><div class="class-contact-name">${r.classCoordinator || '—'}</div></div>${phone(r.classCoordinatorMobile)}</div>`;
+    if(r.coClassIncharge) h += `<div class="class-contact-row"><div><div class="class-contact-label">Co-Class In-Charge</div><div class="class-contact-name">${r.coClassIncharge}</div></div>${phone(r.coClassInchargeMobile)}</div>`;
+    body.innerHTML = h;
+  }
+  document.addEventListener('change', e => {
+    if(e.target && e.target.tagName === 'SELECT') setTimeout(render, 0);
+  });
+  setInterval(render, 500);
+  render();
+})();
+</script>
+
 <div class="designed-by">Designed by Dr. VSK</div>
+
+<div id="bottomDesigner">Designed by Dr. VSK</div>
+
 </body></html>

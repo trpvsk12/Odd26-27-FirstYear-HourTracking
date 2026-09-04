@@ -4,9 +4,9 @@
     "classCoordinator": "Dr. S. Visweswaran",
     "classCoordinatorMobile": "9384226598",
     "coClassIncharge": "Dr. V. Senthilkumar",
-    "coClassInchargeMobile": "9488726768.0",
+    "coClassInchargeMobile": "9488726768",
     "departmentCoordinator": "Dr. V. Senthilkumar",
-    "departmentCoordinatorMobile": "9488726768.0"
+    "departmentCoordinatorMobile": "9488726768"
   },
   {
     "class": "MECH B",
@@ -24,7 +24,7 @@
     "coClassIncharge": "Dr. A. Narayanan",
     "coClassInchargeMobile": "",
     "departmentCoordinator": "Dr. Jingley Jeba",
-    "departmentCoordinatorMobile": "9442389908.0"
+    "departmentCoordinatorMobile": "9442389908"
   },
   {
     "class": "CSE A",
@@ -33,7 +33,7 @@
     "coClassIncharge": "Dr. R. Pichailakshmi",
     "coClassInchargeMobile": "",
     "departmentCoordinator": "Dr.A. Muthuraj/ CSE",
-    "departmentCoordinatorMobile": "9486715098.0"
+    "departmentCoordinatorMobile": "9486715098"
   },
   {
     "class": "CSE B",
@@ -78,7 +78,7 @@
     "coClassIncharge": "Dr. K. Iyappan",
     "coClassInchargeMobile": "",
     "departmentCoordinator": "Dr.K.Gurunathan/AI&DS",
-    "departmentCoordinatorMobile": "9994817275.0"
+    "departmentCoordinatorMobile": "9994817275"
   },
   {
     "class": "ECE A",
@@ -87,7 +87,7 @@
     "coClassIncharge": "Dr. D. Kumar",
     "coClassInchargeMobile": "",
     "departmentCoordinator": "Dr.E.Raja / ECE",
-    "departmentCoordinatorMobile": "9003456148.0"
+    "departmentCoordinatorMobile": "9003456148"
   },
   {
     "class": "ECE B",
@@ -114,7 +114,7 @@
     "coClassIncharge": "Dr. P. Muthukrishnan",
     "coClassInchargeMobile": "",
     "departmentCoordinator": "Dr. S. Sabeetha Saraswathi",
-    "departmentCoordinatorMobile": "9842415482.0"
+    "departmentCoordinatorMobile": "9842415482"
   },
   {
     "class": "IT B",
@@ -126,13 +126,13 @@
     "departmentCoordinatorMobile": ""
   },
   {
-    "class": "CIVIL",
+    "class": "Civil",
     "classCoordinator": "Dr.M.Bhuvaneshwari",
     "classCoordinatorMobile": "9751513152",
     "coClassIncharge": "Dr. R. Jino",
-    "coClassInchargeMobile": "9790037598.0",
+    "coClassInchargeMobile": "9790037598",
     "departmentCoordinator": "Dr. R. Jino",
-    "departmentCoordinatorMobile": "9790037598.0"
+    "departmentCoordinatorMobile": "9790037598"
   },
   {
     "class": "AI&DS A",
@@ -141,7 +141,7 @@
     "coClassIncharge": "Dr. R. Ramesh",
     "coClassInchargeMobile": "",
     "departmentCoordinator": "Dr.S.Suresh Kumar",
-    "departmentCoordinatorMobile": "8300809150.0"
+    "departmentCoordinatorMobile": "8300809150"
   },
   {
     "class": "AI&DS B",
